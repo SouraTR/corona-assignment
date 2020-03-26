@@ -1,5 +1,3 @@
-#/usr/bin/python3
-
 import requests
 import pandas as pd
 import io
@@ -12,11 +10,11 @@ import datetime
 numdays = int(input("Number of days? "))
 
 #select country
-cntrstr = 15      
+cntrstr = 131     
 cntrname = "India"      
 
 #John Hopkins University CSSE raw data from Github repo (can change source if necessary)
-jhuurl = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv"
+jhuurl = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
 
 #using GET method from requests library to make an HTTPS request to the JHU raw csv
 jhudata = requests.get(jhuurl).content
