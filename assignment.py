@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from bs4 import BeautifulSoup
 import datetime
 
-
+Print("Hello World")
 
 #number of days
 numdays = int(input("Number of days? "))
