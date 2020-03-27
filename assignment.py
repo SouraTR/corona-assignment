@@ -6,6 +6,8 @@ from bs4 import BeautifulSoup
 import datetime
 
 
+print("Hello")
+
 #number of days
 numdays = int(input("Number of days? "))
 
