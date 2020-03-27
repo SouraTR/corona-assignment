@@ -4,8 +4,7 @@ import io
 import matplotlib.pyplot as plt
 from bs4 import BeautifulSoup
 import datetime
-
-Print("Hello World")
+import math
 
 #number of days
 numdays = int(input("Number of days? "))
@@ -39,6 +38,12 @@ soup = BeautifulSoup(wddata.text, "html.parser")
 latest_number = soup.find("td", text=cntrname).find_next_sibling("td").text
 lt2 = latest_number.replace(",", "")
 res.append(int(lt2))
+
+#logarithmic
+for k in range(len(res)):
+    res[k] = math.log(res[k])
+
+
 
 #creating a list of dates
 dtlist = []
